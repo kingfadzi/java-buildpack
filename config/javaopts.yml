@@ -15,5 +15,8 @@
 
 # Configuration for the +JAVA_OPTS+ framework
 ---
-java-opts: "$JAVA_OPTS -Dcom.sun.management.jmxremote.port=1616 -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.authenticate=false"
+
+env:
+  java-opts: "$JAVA_OPTS -Dcom.sun.management.jmxremote.port=1616 -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.authenticate=false"
+
 
