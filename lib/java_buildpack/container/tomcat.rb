@@ -156,12 +156,12 @@ module JavaBuildpack::Container
       File.exists? File.join(@app_dir, WEB_INF_DIRECTORY)
     end
 
-     def jolokia_war
+     def jolokia_war_name
       "jolokia.war"
     end
 
     def download_jolokia
-      download_jar("1.1.4", "http://labs.consol.de/maven/repository/org/jolokia/jolokia-war/1.1.4/jolokia-war-1.1.4.war", jolokia.war, File.join(tomcat_home, 'webapps'), 'Buildpack Jolokia Support')
+      download_jar("1.1.4", "http://labs.consol.de/maven/repository/org/jolokia/jolokia-war/1.1.4/jolokia-war-1.1.4.war", jolokia_war_name, File.join(tomcat_home, 'webapps'), 'Buildpack Jolokia Support')
     end
 
   end
