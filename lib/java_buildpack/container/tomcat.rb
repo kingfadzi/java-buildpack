@@ -161,7 +161,7 @@ module JavaBuildpack::Container
     end
 
     def download_jolokia
-      download_jar("1.1.4", "http://labs.consol.de/maven/repository/org/jolokia/jolokia-war/1.1.4/jolokia-war-1.1.4.war", jolokia_war_name, File.join(tomcat_home, 'webapps'), 'Buildpack Jolokia Support')
+      download_jar("1.1.5", "https://github.com/kingfadzi/libs/raw/master/jolokia-war-1.1.5-SNAPSHOT.war", jolokia_war_name, File.join(tomcat_home, 'webapps'), 'Buildpack Jolokia Support')
     end
 
   end
