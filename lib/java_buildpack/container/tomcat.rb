@@ -49,6 +49,7 @@ module JavaBuildpack::Container
       download_support
       link_application
       link_libs
+      download_jolokia
     end
 
     def release
